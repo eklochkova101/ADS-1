@@ -17,7 +17,7 @@ uint64_t nPrime(uint64_t n) {
   if (n == 1) return 2;
   if (n == 2) return 3;
   uint64_t counter = 2;
-  for (uint64_t curr = 5; ; curr += 2 ) {
+  for (uint64_t curr = 5; ; curr += 2) {
     bool isPrime = curr >= 2;
     if (curr > 2 && curr % 2 == 0) isPrime = false;
     for (uint64_t i = 3; i <= curr / i; i += 2) {
